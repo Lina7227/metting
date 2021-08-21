@@ -1,0 +1,33 @@
+{
+  "name": "metting",
+  "version": "0.0.1",
+  "description": "тестовое задание",
+  "main": "index.html",
+  "scripts": {
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lina7227/metting.git"
+  },
+  "keywords": [
+    "gulp_sass"
+  ],
+  "author": "Elena krivosheina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lina7227/metting/issues"
+  },
+  "homepage": "https://github.com/Lina7227/metting#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.5",
+    "bulma": "^0.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  }
+}

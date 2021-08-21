@@ -1,0 +1,410 @@
+@import _var.sass
+
+.page
+    min-width: 375px
+    max-width: 1600px
+    margin: 0 auto
+    font-family: $default_font
+    .header 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 25px
+        @media all and (max-width: 375px)
+            margin-top: 26px
+        .logo
+            background-image: url("../images/logo.svg")
+            height: 32px
+            width: 114px
+            background-repeat: no-repeat
+            background-size: contain
+            margin-top: 10px
+            margin-left: 100px
+            @media all and (max-width: 375px)
+                height: 20px
+                width: 70px
+                margin: 0 0 0 20px
+        .nav
+            display: flex
+            width: 30%
+            justify-content: space-between
+            padding: 0 415px 0 110px
+            @media all and (max-width: 375px)
+                display: none
+            .nav__Link 
+                font-size: 18px
+                color: $dark_color
+                text-decoration: none
+                font-weight: 500
+                line-height: 20px
+                transition: all 0.5s
+            .nav__Link:hover 
+                color: $blue_color
+            .nav__Link:focus 
+                color: $blue_color
+        .burger 
+            display: none
+            @media all and (max-width: 375px)
+                display: flex
+                flex-direction: column
+                width: 28px
+                height: 12px
+                justify-content: space-between
+                margin-top: 5px
+                margin-right: 25px
+                cursor: pointer
+            .burger_div
+                @media all and (max-width: 375px)
+                    height: 3px
+                    width: 100%
+                    background-color: $dark_color
+            .header__burger
+                @media all and (max-width: 375px)
+                    width: 75%
+                    margin-left: 25%
+        .header__btn
+            font-size: 18px
+            font-weight: 500
+            line-height: 20px
+            border: none
+            transition: all 0.9s
+            width: 136px
+            height: 52px
+            color: $dark_color
+            background-color: $white_color
+            @media all and (max-width: 375px)
+                display: none
+        .header__btn:hover
+            cursor: pointer
+            width: 136px
+            height: 52px
+            background-color: $dark_color
+            color: $white_color
+            border-radius: 6px
+        .header__btn:focus
+            cursor: pointer
+            width: 136px
+            height: 52px
+            background-color: $dark_color
+            color: $white_color
+    .nav_mobile 
+        display: none
+        @media all and (max-width: 375px)
+            display: inline-block
+            position: relative
+            text-align: center
+            // display: flex
+            // flex-direction: column
+            // height: 10em
+            // justify-content: center
+            // align-self: center
+        .nav__mobile
+            @media all and (max-width: 375px)
+                display: flex
+                flex-direction: column
+                position: absolute
+                overflow: auto
+                width: 100%
+                top: 20px
+                right: 40px
+                z-index: 10
+                background-color: $white_color
+            .nav__Link_mobile
+                @media all and (max-width: 375px)
+                    font-size: 18px
+                    color: $dark_color
+                    text-decoration: none
+                    font-weight: 500
+                    line-height: 20px
+                    transition: all 0.5s
+                    margin: 8px 0
+            .nav__Link_mobile:hover 
+                @media all and (max-width: 375px)
+                    color: $blue_color
+            .nav__Link_mobile:focus 
+                @media all and (max-width: 375px)
+                    color: $blue_color
+    .description
+        display: flex
+        justify-content: flex-start
+        flex-direction: column
+        position: relative
+        @media all and (max-width: 375px)
+            min-height: 600px
+        .description__title
+            width: 498px
+            font-size: 48px
+            font-weight: 600
+            line-height: 60px
+            color: $dark_color
+            margin: 145px 0 16px 215px
+            z-index: 3
+            @media all and (max-width: 375px)
+                font-size: 28px
+                line-height: 27px
+                width: 80%
+                margin: 44px auto 20px
+                text-align: center
+        .description__subtitle
+            width: 484px
+            font-size: 17px
+            font-weight: normal
+            line-height: 28px
+            color: $dark_color
+            margin: 0 0 34px 215px
+            z-index: 2
+            @media all and (max-width: 375px)
+                font-size: 14px
+                line-height: 20px
+                margin: 0 auto
+                width: 75%
+                text-align: center
+        .description__btn
+            width: 180px
+            height: 66px
+            background-color: $gray_color
+            color: $dark_color
+            font-size: 17px
+            font-weight: 500
+            line-height: 21px
+            text-align: center
+            border-radius: 6px
+            margin-left: 215px
+            margin-bottom: 100px
+            border: none
+            @media all and (max-width: 375px)
+                width: 120px
+                height: 40px
+                font-size: 14px
+                line-height: 17px
+                font-weight: normal
+                margin: 33px auto 41px 
+        .description__btn:hover
+            border: 2px solid $dark_color
+            font-size: 19px
+            @media all and (max-width: 375px)
+                font-size: 16px
+        .description__btn:focus
+            border: 2px solid $dark_color
+            font-size: 19px
+            @media all and (max-width: 375px)
+                font-size: 16px
+        .descripion__picture
+            background-image: url("../images/promo.png")
+            background-size: cover
+            background-repeat: no-repeat
+            width: 786px
+            height: 518px
+            position: absolute
+            top: 49px
+            right: 197px
+            z-index: 0
+            @media all and (max-width: 375px)
+                background-image: url("../images/adaptive.png")
+                width: 350px
+                height: 300px
+                top: 288px
+                right: 13px
+    .publicity
+        margin: 121px 0 0 0 
+        display: flex
+        justify-content: space-between
+        @media all and (max-width: 375px)
+            margin: 59px auto 0
+            flex-direction: column
+        .publicity__title
+            width: 494px
+            font-size: 36px
+            font-weight: 600
+            line-height: 50px
+            color: $dark_color
+            margin: 0 0 0 215px
+            @media all and (max-width: 375px)
+                width: 90%
+                margin: 0 auto
+                font-size: 20px
+                line-height: 30px
+        .publicity__table
+            display: flex
+            flex-flow: row nowrap
+            justify-content: space-between
+            width: 400px
+            margin: 0 200px 0 0
+            padding: 0
+            list-style-type: none
+            @media all and (max-width: 375px)
+                width: 65%
+                margin: 22px auto
+            .publicity__cell
+                display: flex
+                justify-content: flex-start
+                flex-direction: column
+                width: 200px
+                margin: 0
+                @media all and (max-width: 375px)
+                    width: 73px
+                .table__title
+                    font-size: 60px
+                    font-weight: bold
+                    line-height: 70px
+                    color: $dark_color
+                    margin: 0
+                    @media all and (max-width: 375px)
+                        font-size: 30px
+                        line-height: 28px
+                .table__img
+                    width: 107px
+                    height: 16px
+                    @media all and (max-width: 375px)
+                        width: 55px
+                        height: 8px
+                .table__subtitle
+                    font-size: 16px
+                    font-weight: normal
+                    line-height: 28px
+                    color: $dark_color
+                    @media all and (max-width: 375px)
+                        font-size: 8px
+                        line-height: 10px
+    .resources
+        margin: 50px auto 130px auto
+        @media all and (max-width: 375px)
+            margin: 0 auto 50px
+        .resources__logo-zone
+            margin: 0 auto
+            padding: 0
+            list-style-type: 0
+            width: 1110px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @media all and (max-width: 375px)
+                display: none
+            .resources__logo
+                margin: 0
+                list-style-type: none
+                transition: 2s
+            .resources__logo:hover
+               opacity: 0.4 
+        .resources__logo-zone__mobile
+            display: none
+            @media all and (max-width: 375px)
+                width: 85%
+                margin: 0 auto
+                padding: 0
+                list-style-type: 0
+                display: flex
+                justify-content: space-between
+                align-items: center
+            .resources__logo__mobile
+                @media all and (max-width: 375px)
+                    margin: 0
+                    list-style-type: none
+                    transition: 2s
+    .features
+        width: 90%
+        margin: 0 auto 100px auto
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        @media all and (max-width: 375px)
+            margin: 0 auto 131px
+        .features__title
+            margin: 0 auto 
+            font-size: 48px
+            font-weight: 600
+            line-height: 64px
+            color: $dark_color
+            @media all and (max-width: 375px)
+                font-size: 24px
+                font-weight: 24px
+        .features__subtitle
+            margin: 12px auto 48px 
+            width: 40%
+            text-align: center
+            font-size: 16px
+            font-weight: normal
+            line-height: 30px
+            color: $dark_color
+            @media all and (max-width: 375px)
+                display: none
+        .mobile__subtitle
+            display: none
+            @media all and (max-width: 375px)
+                display: inline
+                margin: 12px auto 40px
+                font-size: 14px
+                line-height: 20px
+                color: $dark_color
+                width: 90%
+                text-align: center
+        .features__table
+            display: grid
+            grid-template-rows: repeat(1, 275px)
+            grid-template-columns: repeat(3, 320px) 
+            gap: 80px
+            margin: 0 
+            padding: 0
+            list-style-type: none
+            @media all and (max-width: 375px)
+                grid-template-rows: repeat(3, 275px)
+                grid-template-columns: repeat(1, 320px) 
+                gap: 48px
+            .features__cell
+                display: flex
+                justify-content: flex-start
+                flex-direction: column
+                margin: 0
+                .table__img
+                    width: 72px
+                    height: 72px
+                    @media all and (max-width: 375px)
+                        width: 48px
+                        height: 48px
+                .features__title_them
+                    margin: 28px 0 14px 0
+                    font-size: 24px
+                    font-weight: 600
+                    line-height: 29px
+                    color: $dark_color
+                    @media all and (max-width: 375px)
+                        font-size: 20px
+                        line-height: 24px
+                .table__subtitle
+                    margin: 0
+                    font-size: 16px
+                    font-weight: normal
+                    line-height: 26px
+                    color: $dark_color
+                    @media all and (max-width: 375px)
+                        font-size: 14px
+                        line-height: 24px
+                .features__link
+                    margin: 30px 0 0 0 
+                    font-size: 20px
+                    font-weight: 500
+                    line-height: 16px
+                    color: $dark_color
+                    text-decoration: none
+                    transition: all 0.5s
+                .features__link:hover
+                    color: $blue_color
+                    cursor: pointer
+                .features__link:focus
+                    color: $blue_color
+                    cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
